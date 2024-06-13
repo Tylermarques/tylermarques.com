@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+</script>
+
+<div class="p-2 flex-row">
+	A place holder? You know as well as I that placeholders are some of the most permanent things.
+</div>
+
