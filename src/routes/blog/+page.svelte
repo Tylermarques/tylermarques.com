@@ -1,5 +1,5 @@
 <script>
-	import { Card } from 'flowbite-svelte';
+	import BlogPreview from '$lib/components/BlogPreview.svelte';
 
 	export let data;
 </script>
@@ -10,8 +10,8 @@
 		spot for writeups of projects I've worked on.
 	</div>
 	<div class="grid grid-cols-2 gap-2">
-		{#each data.summaries as { slug, title }}
-			<Card href="/blog/{slug}" class="p-1">{title}</Card>
+		{#each data.blogs as blog}
+			<BlogPreview {blog} />
 		{/each}
 	</div>
 </div>

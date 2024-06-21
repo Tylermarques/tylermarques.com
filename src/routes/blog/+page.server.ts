@@ -1,10 +1,5 @@
-import { posts } from './data.js';
+import { blogPosts } from './data.js';
 
 export function load() {
-    return {
-        summaries: posts.map((post) => ({
-            slug: post.slug,
-            title: post.title
-        }))
-    };
+  return { blogs: blogPosts };
 }

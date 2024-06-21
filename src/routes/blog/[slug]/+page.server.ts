@@ -1,9 +1,9 @@
-import { posts } from '../data.js';
+import { blogPosts } from '../data.js';
 
 export function load({ params }) {
-    const post = posts.find((post) => post.slug === params.slug);
+  const post = blogPosts.find((post) => post.slug === params.slug);
 
-    return {
-        post
-    };
+  return {
+    post
+  };
 }

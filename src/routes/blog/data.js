@@ -1,21 +1,31 @@
-export const posts = [
-    {
-        slug: 'welcome',
-        title: 'Welcome to the Aperture Science computer-aided enrichment center',
-        content:
-            '<p>We hope your brief detention in the relaxation vault has been a pleasant one.</p><p>Your specimen has been processed and we are now ready to begin the test proper.</p>'
-    },
-
-    {
-        slug: 'safety',
-        title: 'Safety notice',
-        content:
-            '<p>While safety is one of many Enrichment Center Goals, the Aperture Science High Energy Pellet, seen to the left of the chamber, can and has caused permanent disabilities, such as vaporization. Please be careful.</p>'
-    },
-
-    {
-        slug: 'cake',
-        title: 'This was a triumph',
-        content: "<p>I'm making a note here: HUGE SUCCESS.</p>"
-    }
+export const blogPosts = [
+  {
+    id: 1,
+    title: 'Hello World 1',
+    date: '2022-01-01',
+    description: 'This is a blog post',
+    image: 'https://picsum.photos/id/10/800/600'
+  },
+  {
+    id: 2,
+    title: 'Foo Bar',
+    date: '2022-01-01',
+    description: 'This is a blog post',
+    image: 'https://picsum.photos/id/10/800/600'
+  },
+  {
+    id: 3,
+    title: 'Hello World 2',
+    date: '2022-01-01',
+    description: 'This is a blog post',
+    image: 'https://picsum.photos/id/11/800/600'
+  },
+  {
+    id: 4,
+    title: 'Foo Bar 2',
+    date: '2022-01-01',
+    description:
+      'This is a much longer description, it might even be longer than the blog post itself, but it is still a blog post',
+    image: 'https://picsum.photos/id/11/800/600'
+  }
 ];
