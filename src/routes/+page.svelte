@@ -16,5 +16,5 @@
 		</p>
 	</div>
 	<h2 class="text-2xl text-gray-900">Latest Posts</h2>
-	<BlogPreviewList />
+	<BlogPreviewList maxPosts={4} />
 </section>
