@@ -1,4 +1,4 @@
-import { blogPosts } from './data.js';
+import { blogPosts } from '$lib/data';
 
 export function load() {
   return { blogs: blogPosts };

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config}*/
+const defaultTheme = require('tailwindcss/defaultTheme')
 const config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
 
@@ -8,6 +9,9 @@ const config = {
   darkMode: 'class',
 
   theme: {
+    fontFamily: {
+      sans: ['JetBrainsMono', ...defaultTheme.fontFamily.sans]
+    },
     extend: {
       colors: {
 

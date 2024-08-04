@@ -1,32 +1,5 @@
-<script>
-	import BlogPreview from '$lib/components/BlogPreview.svelte';
-	const blogPosts = [
-		{
-			title: 'Hello World 1',
-			date: '2022-01-01',
-			description: 'This is a blog post',
-			image: 'https://picsum.photos/id/10/800/600'
-		},
-		{
-			title: 'Foo Bar',
-			date: '2022-01-01',
-			description: 'This is a blog post',
-			image: 'https://picsum.photos/id/10/800/600'
-		},
-		{
-			title: 'Hello World 2',
-			date: '2022-01-01',
-			description: 'This is a blog post',
-			image: 'https://picsum.photos/id/11/800/600'
-		},
-		{
-			title: 'Foo Bar 2',
-			date: '2022-01-01',
-			description:
-				'This is a much longer description, it might even be longer than the blog post itself, but it is still a blog post',
-			image: 'https://picsum.photos/id/11/800/600'
-		}
-	];
+<script lang="ts">
+	import BlogPreviewList from '$lib/components/BlogPreviewList.svelte';
 </script>
 
 <section class="mx-auto p-4">
@@ -39,13 +12,9 @@
 			>
 			if you're interested. I love to build things and I'm always looking for new challenges. I'm half
 			decent at infrastructure and architecture. My day-to-day is focused on shipping client products
-			that should scale when they need to.
+			that scale.
 		</p>
 	</div>
 	<h2 class="text-2xl text-gray-900">Latest Posts</h2>
-	<div class="grid grid-cols-2 -mx-4">
-		{#each blogPosts.slice(0, 2) as blog}
-			<BlogPreview {blog} />
-		{/each}
-	</div>
+	<BlogPreviewList />
 </section>
