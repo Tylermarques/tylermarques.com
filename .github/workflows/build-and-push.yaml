@@ -44,7 +44,7 @@ jobs:
         with:
           repository: tylermarques/homelab-infra
           ref: main
-          token: ${{ secrets.HOMELAB_GITHUB_PAT }}
+          token: ${{ secrets.HOMELAB_MANIFESTS_WRITE_PAT}}
           path: homelab-infra/
 
       - name: Update Manifests
