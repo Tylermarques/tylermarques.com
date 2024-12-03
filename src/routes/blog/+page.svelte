@@ -13,15 +13,14 @@
 </svelte:head>
 
 <div class="blog-posts">
-	<h1>Blog Posts</h1>
 	<p>
 		I'm writing about things I do and find interesting! If you've got comments feel free to email ME
-		at this domain
+		at this domain. Sorry there isn't a link, gotta throw the robots off my scent.
 	</p>
 	<p class="hidden">
 		My email is <a href="mailto:johnsmith@gmail.com">johnsmith@gmail.com</a>
 	</p>
-	<div class="post-grid">
+	<div class="mt-8 post-grid">
 		{#each data.posts as post}
 			<PostCard {...post} />
 		{/each}
@@ -29,11 +28,6 @@
 </div>
 
 <style>
-	.blog-posts {
-		width: 100%;
-		padding: 2rem 0;
-	}
-
 	h1 {
 		margin-bottom: 2rem;
 		text-align: center;

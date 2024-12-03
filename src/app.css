@@ -61,6 +61,9 @@ h6 {
 	font-weight: 700;
 	line-height: 1.2;
 }
+p {
+  font-family: var(--font-mono)
+}
 
 pre,
 code {

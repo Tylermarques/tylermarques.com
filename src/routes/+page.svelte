@@ -13,18 +13,16 @@
 
 <section class="container">
 	<div class="">
-		<h1 class="">Tyler Marques</h1>
+		<h1 class="pb-3">Tyler Marques</h1>
 		<p class="intro-text">
-			I'm (mostly) an ML engineer / architect. I run a small consultantcy, <a
-				href="https://www.MarquesCG.com/"
+			I'm a ML engineer / systems architect. I run a small consultantcy, <a
+				href="https://MarquesCG.com/"
 				class="underline">MarquesCG</a
 			>
-			if you're interested. I love to build and maintain systems. I'm always looking for new challenges.
-			I'm half decent at infrastructure and architecture. In my day-to-day I help my clients build quickly
-			and for future growth
+			if you're interested.
 		</p>
 	</div>
-	<section class="featured-posts">
+	<section class="mt-8">
 		<h2>Latest Posts</h2>
 		<div class="post-grid">
 			{#each data.posts as post}
@@ -35,18 +33,6 @@
 </section>
 
 <style>
-	p {
-		font-family: var(--font-mono);
-	}
-	.container {
-		width: 100%;
-	}
-
-	.hero {
-		text-align: center;
-		padding: 3rem 0;
-	}
-
 	h1 {
 		font-size: 2.8rem;
 		margin: 0;
@@ -54,17 +40,6 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
-	}
-
-	.intro {
-		font-size: 1.2rem;
-		max-width: 38rem;
-		margin: 1.5rem auto;
-		color: var(--text-muted);
-	}
-
-	.featured-posts {
-		margin: 4rem 0;
 	}
 
 	h2 {
