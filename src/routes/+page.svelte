@@ -12,8 +12,8 @@
 </svelte:head>
 
 <section class="container">
-	<div class="pb-[2em]">
-		<h1 class="text-3xl text-gray-900">Tyler Marques</h1>
+	<div class="">
+		<h1 class="">Tyler Marques</h1>
 		<p class="intro-text">
 			I'm (mostly) an ML engineer / architect. I run a small consultantcy, <a
 				href="https://www.MarquesCG.com/"
