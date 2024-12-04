@@ -10,6 +10,7 @@ const config = {
   theme: {
     fontFamily: {
       sans: [
+        'Fira Mono',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',

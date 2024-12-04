@@ -25,14 +25,23 @@
 			<PostCard {...post} />
 		{/each}
 	</div>
+	<div class="mt-8">
+		<h1 class="text-lg text-red-400">Blog TODOs!</h1>
+		<ul>
+			<li>
+				- Change the way lists look in the blog, they render oddly, and it changes the font too!
+			</li>
+			<li>
+				- Notes in the margin, would be cool to have some way to do footnote like items, but without
+				scrolling to the bottom. Maybe a drawer like section on mobile where sliding the paragraph
+				shows the note?
+			</li>
+			<li>- [!note] boxes don't render correctly</li>
+		</ul>
+	</div>
 </div>
 
 <style>
-	h1 {
-		margin-bottom: 2rem;
-		text-align: center;
-	}
-
 	.post-grid {
 		display: grid;
 		gap: 2rem;

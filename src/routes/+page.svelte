@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import PostCard from '$lib/components/PostCard.svelte';
-	import AsciiName from '$lib/components/AsciiName.svelte';
 
 	export let data: PageData;
 </script>
@@ -22,11 +21,11 @@
 			if you're interested.
 		</p>
 	</div>
-	<section class="mt-8">
+	<section class="mt-8 font-tylermarques">
 		<h2>Latest Posts</h2>
 		<div class="post-grid">
 			{#each data.posts as post}
-				<PostCard {...post} />
+				<PostCard {post} />
 			{/each}
 		</div>
 	</section>

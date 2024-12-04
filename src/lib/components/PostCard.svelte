@@ -1,16 +1,14 @@
-<script>
+<script lang="ts">
 	import { format } from 'date-fns';
-	export let title;
-	export let date;
-	export let description;
-	export let slug;
+	import type { Post } from '$lib/types';
+	export let post: Post;
 </script>
 
 <article class="post-card">
-	<h3>{title}</h3>
-	<time datetime={date}>{format(new Date(date), 'MMMM d, yyyy')}</time>
-	<p>{description}</p>
-	<a href="/blog/{slug}" class="read-more">Read more <span class="arrow">→</span></a>
+	<h3>{post.title}</h3>
+	<time datetime={post.date}>{format(new Date(post.date), 'MMMM d, yyyy')}</time>
+	<p>{post.description}</p>
+	<a href="/blog/{post.slug}" class="read-more">Read more <span class="arrow">→</span></a>
 </article>
 
 <style>
