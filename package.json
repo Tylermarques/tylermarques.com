@@ -45,6 +45,7 @@
     "canvas-confetti": "^1.9.3",
     "date-fns": "^4.1.0",
     "mdsvex": "^0.12.3",
+    "posthog-js": "^1.194.3",
     "rehype-slug": "^6.0.0",
     "remark-toc": "^9.0.0"
   }
