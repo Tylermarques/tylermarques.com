@@ -1,18 +1,32 @@
 <script lang="ts">
+	// FIXME: There is a tabindex=0 on the div for the card. I'm not certain that is correct
+
 	import { format } from 'date-fns';
 	import type { Post } from '$lib/types';
 	interface Props {
 		post: Post;
 	}
 	let { post }: Props = $props();
+	function handleOnKeyUp(event: KeyboardEvent) {
+		event.preventDefault();
+		if (event.key === 'Enter') {
+			location.href = '/blog/' + post.slug;
+		}
+	}
 </script>
 
-<article class="post-card">
+<div
+	class="post-card"
+	onclick={(location.href = '/blog/' + post.slug)}
+	onkeyup={handleOnKeyUp}
+	role="link"
+	tabindex="0"
+>
 	<h3>{post.title}</h3>
 	<time datetime={post.date}>{format(new Date(post.date), 'MMMM d, yyyy')}</time>
 	<p>{post.description}</p>
 	<a href="/blog/{post.slug}" class="read-more">Read more <span class="arrow">→</span></a>
-</article>
+</div>
 
 <style>
 	.post-card {

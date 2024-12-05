@@ -18,7 +18,11 @@ export const fetchPosts = async (): Promise<Post[]> => {
         ...metadata,
         slug
       };
-      posts.push(post);
+      if (new Date(post.date) <= new Date()) {
+
+        posts.push(post);
+      }
+
     }
   }
 
