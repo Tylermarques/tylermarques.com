@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import { format } from 'date-fns';
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 	</header>
 
 	<div class="content">
-		<svelte:component this={data.content} />
+		<data.content />
 	</div>
 </article>
 

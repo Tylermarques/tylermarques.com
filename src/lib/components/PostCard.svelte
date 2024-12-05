@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { format } from 'date-fns';
 	import type { Post } from '$lib/types';
-	export let post: Post;
+	interface Props {
+		post: Post;
+	}
+	let { post }: Props = $props();
 </script>
 
 <article class="post-card">

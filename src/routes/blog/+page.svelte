@@ -4,7 +4,11 @@
 	import type { PageData } from './$types';
 	import PostCard from '$lib/components/PostCard.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <svelte:head>
@@ -22,7 +26,7 @@
 	</p>
 	<div class="mt-8 post-grid">
 		{#each data.posts as post}
-			<PostCard {...post} />
+			<PostCard {post} />
 		{/each}
 	</div>
 	<div class="mt-8">
