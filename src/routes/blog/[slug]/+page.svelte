@@ -11,12 +11,22 @@
 <article class="post">
 	<header>
 		<h1>{data.meta.title}</h1>
+		<h3>{data.meta.subtitle}</h3>
 		<time datetime={data.meta.date}>{format(new Date(data.meta.date), 'MMMM d, yyyy')}</time>
 	</header>
 
 	<div class="content">
 		<data.content />
 	</div>
+
+	<footer class="border-t-white border-t-2">
+		<div class="pt-8">
+			<p>
+				If you're enjoying my blog, consider adding me to your favourite RSS reader!
+				<a href="/rss">/rss</a>
+			</p>
+		</div>
+	</footer>
 </article>
 
 <style>

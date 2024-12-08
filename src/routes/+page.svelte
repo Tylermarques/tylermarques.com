@@ -11,7 +11,7 @@
 
 <svelte:head>
 	<title>DevBlog</title>
-	<meta name="description" content="A developer blog built with SvelteKit" />
+	<meta name="description" content="A space for all things Tyler Marques" />
 </svelte:head>
 
 <section class="container">
