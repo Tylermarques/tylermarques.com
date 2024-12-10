@@ -3,6 +3,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
 import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
+import { remarkStaticImages } from './src/lib/remarkStaticImages.js'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,7 +12,7 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extensions: ['.md'],
-      remarkPlugins: [remarkToc],
+      remarkPlugins: [remarkToc, remarkStaticImages],
       rehypePlugins: [rehypeSlug]
     })
   ],
