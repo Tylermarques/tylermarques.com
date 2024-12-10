@@ -16,7 +16,7 @@
 </script>
 
 <div
-	class="post-card"
+	class="post-card cursor-pointer"
 	onclick={(location.href = '/blog/' + post.slug)}
 	onkeyup={handleOnKeyUp}
 	role="link"
