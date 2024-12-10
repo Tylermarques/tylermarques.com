@@ -83,7 +83,7 @@
 	}
 
 	.content :global(ul) {
-		margin: 1.5rem 0;
+		margin: 0rem 0 1rem 0;
 		padding-left: 1.5rem;
 	}
 	.content :global(table) {
@@ -115,5 +115,8 @@
 
 	.content :global(li) {
 		margin: 0.5rem 0;
+	}
+	.content > ul > lu {
+		margin: 3rem;
 	}
 </style>
