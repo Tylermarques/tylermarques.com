@@ -1,0 +1,31 @@
+name: Push Changes to Develop
+
+on:
+  workflow_dispatch: # Enable manual runs
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+  packages: write
+  attestations: write
+  id-token: write
+
+jobs:
+  build-frontend:
+    uses: MarquesCG/pipeline-tools/.github/workflows/build.yaml@main
+    secrets: inherit
+    with:
+      image-name: tylermarques-com  # Docker image name on push. Make sure this matches the manifests
+      context-path: service # (optional) path to context within service directory
+      service-name: Frontend # (optional) name of service for logging
+  
+  deploy-manifests:
+    needs: [build-frontend]
+    uses: MarquesCG/pipeline-tools/.github/workflows/deploy.yaml@main
+    secrets: inherit
+    with:
+      service-name: tylermarques-com # The name of the service to update (within homelab)
+      deploy-env: dev # The environment to update (dev|production)
+      branch-name: develop # The name of the branch to pull from

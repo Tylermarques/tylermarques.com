@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: tylermarques-com
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`tylermarques.com`) || Host(`www.tylermarques.com`)
+      priority: 10
+      services:
+        - name: prod-tylermarques-com
+          port: 3000
