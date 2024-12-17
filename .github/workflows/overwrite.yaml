@@ -1,0 +1,22 @@
+name: Overwrite manifests
+
+# This job is used to overwrite the manifests in homelab infra to use
+
+on:
+  workflow_dispatch: # Enable manual runs
+    inputs:
+      branch-name: # (default: main) The name of the branch to pull from
+        required: false
+        default: main
+        type: string
+
+jobs:
+  overwrite-manifest:
+    uses: MarquesCG/pipeline-tools/.github/workflows/overwrite.yaml@main
+    secrets: inherit
+    with:
+      service-name: tylermarques-com
+      manifest-dir: deploy
+      branch-name: ${{ inputs.branch-name }}
+
+    
