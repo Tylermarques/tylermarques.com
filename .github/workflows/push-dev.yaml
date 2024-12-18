@@ -20,6 +20,7 @@ jobs:
       image-name: tylermarques-com  # Docker image name on push. Make sure this matches the manifests
       context-path: service # (optional) path to context within service directory
       service-name: Frontend # (optional) name of service for logging
+      ghrc-oranization: tylermarques
   
   deploy-manifests:
     needs: [build-frontend]
