@@ -13,7 +13,8 @@ on:
 jobs:
   overwrite-manifest:
     uses: MarquesCG/pipeline-tools/.github/workflows/overwrite.yaml@main
-    secrets: inherit
+    secrets:
+      HOMELAB_TOKEN: ${{ secrets.HOMELAB_TOKEN }}
     with:
       service-name: tylermarques-com
       manifest-dir: deploy
