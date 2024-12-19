@@ -25,7 +25,8 @@ jobs:
   deploy-manifests:
     needs: [build-frontend]
     uses: MarquesCG/pipeline-tools/.github/workflows/deploy.yaml@main
-    secrets: inherit
+    secrets:
+      HOMELAB_TOKEN: ${{ secrets.HOMELAB_TOKEN }}
     with:
       service-name: tylermarques-com # The name of the service to update (within homelab)
       deploy-env: production # The environment to update (dev|production)
