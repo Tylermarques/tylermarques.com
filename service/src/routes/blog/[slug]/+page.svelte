@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { format } from 'date-fns';
 	let { data } = $props();
+	import MarginNote from '$lib/components/MarginNote.svelte';
 </script>
 
 <svelte:head>
