@@ -1,6 +1,6 @@
 <script lang="ts">
 	import posthog from 'posthog-js';
-	function handleOnMouseOver(event: MouseEvent) {
+	function handleOnenter(event: MouseEvent) {
 		event.target.src = '/puppy-upscaled.jpeg';
 		posthog.capture('saw-dog', { property: '' });
 	}
@@ -9,7 +9,7 @@
 <div class=" flex lg:flex-row flex-col">
 	<div id="crop" class=" overflow-hidden rounded-lg justify-center">
 		<img
-			on:mouseover={handleOnMouseOver}
+			on:mouseenter={handleOnenter}
 			on:mouseleave={(this.src = '/headshot-with-puppy-cropped.jpg')}
 			alt="Man with puppy."
 			src="/headshot-with-puppy-cropped.jpg"
