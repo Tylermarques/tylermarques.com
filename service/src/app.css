@@ -9,24 +9,6 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', JetBrainsMono, monospace;
 
-	/* Light theme colors */
-	--color-bg-0: #ffffff;
-	--color-bg-1: #f8f9fa;
-	--color-bg-2: #e9ecef;
-	--accent-color: #3b82f6;
-	--heading-color: #1e293b;
-	--text-color: #334155;
-	--text-muted: #64748b;
-	--border-color: #e2e8f0;
-	--card-bg: #ffffff;
-	--header-bg: rgba(255, 255, 255, 0.8);
-
-	--column-width: 60rem;
-	--column-margin-top: 4rem;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
 		/* Dark theme colors */
 		--color-bg-0: #0f172a;
 		--color-bg-1: #1e293b;
@@ -38,6 +20,24 @@
 		--border-color: #334155;
 		--card-bg: #1e293b;
 		--header-bg: rgba(15, 23, 42, 0.8);
+
+	--column-width: 60rem;
+	--column-margin-top: 4rem;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+	/* Light theme colors */
+	--color-bg-0: #ffffff;
+	--color-bg-1: #f8f9fa;
+	--color-bg-2: #e9ecef;
+	--accent-color: #3b82f6;
+	--heading-color: #1e293b;
+	--text-color: #334155;
+	--text-muted: #64748b;
+	--border-color: #e2e8f0;
+	--card-bg: #ffffff;
+	--header-bg: rgba(255, 255, 255, 0.8);
 	}
 }
 
