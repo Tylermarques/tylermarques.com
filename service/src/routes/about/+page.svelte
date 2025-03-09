@@ -1,8 +1,13 @@
 <script lang="ts">
 	import posthog from 'posthog-js';
+	import { debounce } from '$lib/debounce';
+	function sendSawDogEvent() {
+		posthog.capture('saw-dog', { property: '' });
+	}
 	function handleOnenter(event: MouseEvent) {
 		event.target.src = '/puppy-upscaled.jpeg';
-		posthog.capture('saw-dog', { property: '' });
+		debounce(sendSawDogEvent);
+		sendSawDogEvent();
 	}
 </script>
 
