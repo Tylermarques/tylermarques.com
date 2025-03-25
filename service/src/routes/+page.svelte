@@ -18,7 +18,7 @@
 	<div class="">
 		<h1 class="pb-3">Tyler Marques</h1>
 		<p class="intro-text">
-			I'm a ML engineer / systems architect. I run a small consultantcy, <a
+			I'm a ML engineer / systems architect. I run a small consultancy, <a
 				href="https://MarquesCG.com/"
 				class="underline">MarquesCG</a
 			>
