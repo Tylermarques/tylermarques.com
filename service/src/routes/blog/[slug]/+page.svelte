@@ -7,6 +7,7 @@
 <svelte:head>
 	<title>{data.meta.title}</title>
 	<meta name="description" content={data.meta.description} />
+	<meta name="fediverse:creator" content="@tmarques@mastodon.social" />
 </svelte:head>
 
 <article class="post">

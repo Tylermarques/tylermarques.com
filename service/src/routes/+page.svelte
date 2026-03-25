@@ -33,6 +33,9 @@
 			{/each}
 		</div>
 	</section>
+	<footer class="mt-8">
+		<a rel="me" href="https://mastodon.social/@tmarques">Mastodon</a>
+	</footer>
 </section>
 
 <style>
